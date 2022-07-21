@@ -167,7 +167,7 @@ a{
     position: absolute;
     left: 0;
     top:70%;
-    margin: 5px;
+    margin: 5px 15px;
     flex-direction: column;
 }
 p{
