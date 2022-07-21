@@ -130,6 +130,7 @@ form label{
     align-items: center;
     margin: 0 auto 10px;
     flex-direction: column;
+    width: 88vw;
 }
 .wrapper{
     display: flex;
@@ -138,9 +139,13 @@ form label{
     align-items: center;
     flex-direction: column;
     border: none;
-    box-shadow: 1px 1px 0 rgb(73, 76, 78);
-    width: 250px;
-    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow:  2px 5px 3px 0px rgba(0,0,0,0.5);
+    /* 1px 1px 0 rgb(73, 76, 78);*/
+
+    width: 80%;
+    height: 350px;
     background: rgb(255, 255, 255);
 }
 
@@ -161,27 +166,30 @@ a{
     display: flex;
     position: absolute;
     left: 0;
-    top:60%;
+    top:70%;
     margin: 5px;
     flex-direction: column;
 }
 p{
-    font-size: 10px;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 span{
-    font-size: 8px;
+    font-size: 0.75rem;
     font-weight: 400;
     left: 0;
+    color: #afafaf;
 }
 a.details{
+    margin-top: 5px;
     text-decoration: none;
-    font-size: 6px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: #fff;
-    background: rgba(15, 65, 15, 0.966);
+    background: #476a2e;;
     width: fit-content;
-    padding: 1.5px;
+    padding: 0.25rem 0.4rem;
+    border-radius: 4px;
 }
 
 .single-drink{
@@ -201,6 +209,7 @@ a.details{
 .drink-img{
     display: flex;
     justify-content: center;
+    width: 70vw;
     align-items: center;
 }
 .single-drink .drink-info{
@@ -209,21 +218,21 @@ a.details{
     justify-content: center;
     align-items: center;
 }
-.drink-info span label{
+.drink-info  label{
     background: #d4e6a5;
     color:#476a2e;
     justify-content: center;
     align-items: center;
     padding: 2px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
-.drink-info span h2, .drink-info span p{
+.drink-info  h2, .drink-info  p, .drink-info ul{
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.8;
     font-size:  1rem;
     justify-content: center;
-    padding: 2px;
+    padding:  0.25rem 0.5rem;;
     align-items: center;
 }
 .drink-info{
@@ -249,7 +258,7 @@ li{
     list-style: none;
 }
 .drink-img{
-    width: 25%;
+   height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,12 +308,16 @@ li{
     font-size: 1rem;
     color: rgb(34,34,34);
 }
-@media screen and  (min-width:480px) {
+
+.ingredients{
+    display: flex;
+
+}
+
+@media screen and  (min-width:835px) {
     .section-center{
         display: flex;
         flex-direction: row;
-        
-        
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 0;
@@ -351,7 +364,7 @@ li{
         color: rgb(34,34,34);
     }
  }
- @media only screen and (min-width:767px){
+ @media only screen and (min-width:1272px){
     .wrapper{
         display: flex;
         margin-right: 0;

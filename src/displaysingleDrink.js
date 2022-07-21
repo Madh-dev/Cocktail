@@ -23,12 +23,12 @@ const displayDrink = ((data) => {
     const gtype = get ('.drink-glass');
     img.src = image;
     document.title = name;
-    category.textContent  = categry;
-    info.textContent = type;
-    gtype.textContent = glassType;
-    drinkName.textContent = name;
-    description.textContent = desc;
-    strIngredients.innerHTML = list.map((item) => {
+    category.innerHTML  = "<label>Category:</label>" +"  " + categry;
+    info.innerHTML ="<label>Info:</label>" + "  " + type;
+    gtype.innerHTML ="<label>Glass:</label>" + "  " + glassType;
+    drinkName.innerHTML ="<label>Name:</label> " + "  " + name;
+    description.innerHTML = "<label>Instructions:</label>" + "  " + desc;
+    strIngredients.innerHTML = "<label>Ingredients:</label>" + "  " + list.map((item) => {
         if (!item)
             return;
         return `${item}</li>`;
